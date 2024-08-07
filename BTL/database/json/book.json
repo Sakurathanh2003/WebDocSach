@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "title": "Nô lệ bóng tối",
+    "author": "Guiltythree",
+    "year": 2024,
+    "description": "Lớn lên trong cảnh nghèo đói, Sunny chưa bao giờ mong đợi điều gì tốt đẹp từ cuộc sống. Tuy nhiên, ngay cả cậu cũng không ngờ bản thân sẽ được Bùa chú Ác mộng lựa chọn và trở thành một người thức tỉnh – một nhóm người ưu tú được ban cho siêu sức mạnh. Bị đưa đến một thế giới ma thuật đã bị phá hủy, cậu ta phải đối mặt với nhiều con quái vật khủng khiếp – và những người thức tỉnh khác – trong một trận chiến sinh tồn chết chóc.\nTệ hơn nữa, sức mạnh thần thánh mà cậu nhận được đi kèm với một tác dụng phụ nhỏ nhưng có thể gây tử vong…",
+    "image": "Nô lệ bóng tối.jpg",
+    "categoryID": 1,
+    "activate": 0
+  },
+  {
+    "id": 2,
+    "title": "Lord of Mysteries",
+    "author": "Ái Tiềm Thủy Đích Ô Tặc",
+    "year": 2024,
+    "description": "Trong cơn thủy triều của hơi nước và máy móc, kẻ nào có thể chạm tới sự phi thường? Trong màn sương mù của lịch sử cùng hắc ám, là tiếng ai thì thầm bên tai? Ta tỉnh lại từ trong quỷ bí, mở mắt nhìn ra thế giới này:Súng ống, đại bác, chiến hạm, khí cầu điều khiển được, máy điện báo; Ma dược, bói toán, nguyền rủa, người treo ngược, vật phong ấn...Ánh sáng vẫn tiếp tục chiếu rọi, nhưng thần bí chưa bao giờ cách xa.Truyền thuyết về \"Kẻ Khờ\" bắt đầu từ đây.",
+    "image": "Lord of Mysteries.jpg",
+    "categoryID": 2,
+    "activate": 0
+  },
+  {
+    "id": 3,
+    "title": "Hoan Nghênh Đến Với Địa Ngục Của Ta",
+    "author": "Mặc Linh",
+    "year": 2024,
+    "description": "Thuở nhỏ, Ngân Tô không may đã bị kéo vào một trò chơi sinh tồn vô hạn. Bị kẹt trong phó bản đầu tiên, cô phải trải qua vô số lần chết đi sống lại, lên tới mười ngàn lần, cuối cùng mới trở lại tiến trình bình thường của trò chơi. Cuối cùng không còn phải đối mặt với một đám quái vật, Ngân Tô rơi lệ đầy mặt, quyết định tốt hơn hết là lặp tình hữu nghị với chúng. Nhìn thấy Ngân Tô dễ dàng bóp nát một con quái vật, những con quái vật khác cũng run rẩy:\"Không, chúng không muốn.\" Mãi sau này, trong trò chơi xuất hiện một quy tắc cấm kỵ: \"Tránh xa Ngân Tô ra, nàng ta là đồ thần kinh",
+    "image": "Hoan Nghênh Đến Với Địa Ngục Của Ta.png",
+    "categoryID": 3,
+    "activate": 0
+  },
+  {
+    "id": 4,
+    "title": "Tiểu Thuyết Kamen Rider Hibiki",
+    "author": "Tsuyoshi Kida",
+    "year": 2024,
+    "description": "Đó là khoảng thời gian mà thời kỳ Chiến Quốc Nhật Bản kết thúc và sự cai trị của Mạc phủ Edo được thiết lập. Hibiki và các tộc \"Oni\" khác đang ẩn náu ở làng Yoshino, họ đang làm việc để thanh tẩy lũ Makamou. Để trả thù cho cha mình, Ninja Biến Thân Arashi đã hóa thân thành diều hâu và nung nấu âm mưu tiêu diệt Huyết Xa Đảng. Sau cuộc gặp gỡ định mệnh, một trận chiến khắc nghiệt đang chờ đợi cả hai chiến binh!",
+    "image": "Tiểu Thuyết Kamen Rider Hibiki.jpg",
+    "categoryID": 4,
+    "activate": 0
+  },
+  {
+    "id": 5,
+    "title": "Death Note L: Change The WorLd",
+    "author": "M",
+    "year": 2024,
+    "description": "Trong một dòng thời gian khác, tên của vị thám tử lỗi lạc L đã bị viết vào trong Tử Ký. L chỉ còn có 23 ngày để ngăn chặn một tổ chức khủng bố, nếu không họ sẽ sử dụng một loại virus chết chóc để thay đổi thế giới… bằng cách tiêu diệt phần lớn nhân loại",
+    "image": "Death Note L: Change The WorLd.jpg",
+    "categoryID": 5,
+    "activate": 0
+  },
+  {
+    "id": 6,
+    "title": "Gosick New Continent",
+    "author": "Kazuki Sakuraba",
+    "year": 2024,
+    "description": "Victorique và Kazuya, bộ đôi huyền thoại đã trở lại!1930, New York. Victorique và Kazuya sống một cuộc sống mới với tư cách là thám tử tư và phóng viên báo chí. Trong khi Victorique được yêu cầu điều tra về một vụ án giết người hàng loạt, thì Kazuya đến phỏng vấn Tiến sĩ Boreido, người “chữa lành vết thương tâm lý của con người bằng khoa học của tâm trí”. Những bí ẩn về các vụ giết người hàng loạt với địa điểm, phương thức phạm tội và thủ phạm hoàn toàn khác nhau cũng như những bí ẩn về chẩn đoán giấc mơ thông qua tư vấn.Cuối cùng, hai sự việc trở nên gắn kết với nhau và biến thành một âm mưu đáng sợ.",
+    "image": "Gosick New Continent.jpg",
+    "categoryID": 6,
+    "activate": 0
+  },
+  {
+    "id": 7,
+    "title": "Throne of Magical Arcana",
+    "author": "Ái Tiềm Thủy Đích Ô Tặc",
+    "year": 2024,
+    "description": "Ai có thể tưởng tượng được Hạ Phong, một chàng sinh viên đang bảo vệ luận văn tốt nghiệp, chuẩn bị trở thành tinh anh của xã hội hiện đại lại xuyên thẳng đến thời đại của tôn giáo và ma pháp, thời đại mà giáo hội và tín ngưỡng tôn giáo lên ngôi còn nghiên cứu khoa học lại bị coi là dị giáo... Điều gì đang chờ đợi Hạ Phong ở phía trước? Hãy cùng dõi theo hành trình xây dựng thành công, sự nghiệp, gia đình, tình yêu, tình bạn từ một xuất phát điểm vô cùng thấp của Hạ Phong.\"Tri thức là sức mạnhThần chẳng qua cũng chỉ là pháp sư khá mạnh mà thôi.”Đây là web novel đầu tay của lão Mực, đầu tay chứ không có nghĩa là non tay. Lão Mực đã vẽ nên thế giới nơi mà tri thức, khoa học thực sự biến thành sức mạnh theo đúng nghĩa đen và chứa đựng một khối lượng tri thức vô cùng đồ sộ và phức tạp.",
+    "image": "Throne of Magical Arcana.jpg",
+    "categoryID": 7,
+    "activate": 0
+  },
+  {
+    "id": 8,
+    "title": "Hunter of the Ruined World",
+    "author": "글쟁이S",
+    "year": 2024,
+    "description": "Đã 200 năm kể từ ngày tận thế. Nhưng người thợ săn vẫn tiếp tục tìm kiếm con mồi của mình",
+    "image": "Hunter of the Ruined World.jpg",
+    "categoryID": 8,
+    "activate": 0
+  },
+  {
+    "id": 9,
+    "title": "Lord of Mysteries 2: Circle of Inevitability",
+    "author": "Ái Tiềm Thủy Đích Ô Tặc",
+    "year": 2024,
+    "description": "Quỷ bí chi chủ, phần 2\nNăm 1368, vào cuối tháng bảy, màu máu đỏ tươi giáng xuống từ phía trên thiên đường.",
+    "image": "Lord of Mysteries 2- Circle of Inevitability.jpg",
+    "categoryID": 1,
+    "activate": 0
+  },
+  {
+    "id": 10,
+    "title": "Song Of The Dead - Khúc Ca Của Tử Thi",
+    "author": "Matsuda-Sensei",
+    "year": 2024,
+    "description": "Bạn nhìn thấy gì ở ngoài kia ? Một vùng đất cằn cỗi không có dấu hiệu sự sống bị tàn phá bởi chiến tranh, người sống chà đạp lên nhau, người chết nằm lại dưới mặt đất dơ bẩn. Đối với các chỉ huy, điều đó giống như một bức tranh về nghệ thuật quân sự. Còn đối với các binh lính, nó chính là địa ngục ! Căm thù, sợ hãi, nổi loạn, điên cuồng, tất cả như quy về nơi chiến trường này. Nia Azami nghĩ về \"chiến tranh\" giống như tập hợp của sự bệnh hoạn sâu thẳm bên trong con người vậy. Đây là câu chuyện khai thác về mặt tối của các quốc gia và sự đáng sợ, ghê tởm của chiến tranh.",
+    "image": "Song Of The Dead - Khúc Ca Của Tử Thi.png",
+    "categoryID": 2,
+    "activate": 0
+  },
+  {
+    "id": 11,
+    "title": "Mimizuku to Yoru no Ou",
+    "author": "Kougyoku Izuki",
+    "year": 2024,
+    "description": "Mimizuku, một cô bé tay chân đeo xiềng cùng con số \"332\" nung lên trán, lang thang vào Dạ Lâm để bị quái vật ăn thịt. Tuy nhiên, khi kẻ trị vì những con quái, vị \"Dạ Vương\" bí ẩn và tuyệt đẹp, từ chối việc ăn thịt cô bé, em đã cố tìm cách thuyết phục ngài đổi ý.",
+    "image": "Mimizuku to Yoru no Ou.jpg",
+    "categoryID": 3,
+    "activate": 0
+  },
+  {
+    "id": 12,
+    "title": "Infinite Competitive Dungeon Society",
+    "author": "Toika",
+    "year": 2024,
+    "description": "Sự kiện Song Nguyệt xảy ra đã đánh dấu cho thời đại phát triển mới của nhân loại.Cùng với sự xuất hiện của quái vật và hầm ngục giữa thành phố hiện đại là Năng lực giả được thức tỉnh giữa loài người có khả năng chiến đấu cùng với chúng.Thế giới đối mặt với nguy cơ lớn cùng với đó là sự ra đời của loại năng lượng mới và sự suy tàn của các nghề nghiệp trước Song Nguyệt.Thường thức của thế giới đã biến đổi trong khoảng khắc.Và tưởng tượng hòa cùng thực tại.",
+    "image": "Infinite Competitive Dungeon Society.jpg",
+    "categoryID": 4,
+    "activate": 0
+  },
+  {
+    "id": 13,
+    "title": "Avoid the Death Route!",
+    "author": "Minazuki Shizuru",
+    "year": 2024,
+    "description": "Đợi một chút!? Đây là một giấc mơ, phải không? Eh, tương lai của tôi đấy à!? Đây là một thế giới Otome Game ư? Đùa à!? Mình phải làm gì đó nếu không tương lai của mình sẽ vô vọng mất ……※※※Victoria nhận ra cô đã nhập thể ở một thế giới khác. Tuy nhiên trong cái thế giới Otome game này, cô là nhân vật phản diện và mọi thứ đều dẫn đến tương lai cực kỳ tồi tệ khiến cô choáng váng. Victoria phải đấu tranh lật đổ cái tương lai tồi tệ đó.",
+    "image": "Avoid the Death Route!.jpg",
+    "categoryID": 5,
+    "activate": 0
+  },
+  {
+    "id": 14,
+    "title": "Điều ước của tôi là...",
+    "author": "A99",
+    "year": 2024,
+    "description": "Tôi đã chết. Và cứ như đó là một việc hiển nhiên, Thần xuất hiện trước mặt tôi. Vị thần đó nói:“Chỉ một lần này thôi, ta sẽ biến một điều ước của cậu thành hiện thực.”Sau khi bối rối, suy nghĩ về về thứ mình muốn, tôi quyết định.“Tôi ước rằng mình có vô số điều ước.”",
+    "image": "Điều ước của tôi là.jpg",
+    "categoryID": 6,
+    "activate": 0
+  },
+  {
+    "id": 15,
+    "title": "EVERYONE ELSE IS A RETURNEE",
+    "author": "Toika",
+    "year": 2024,
+    "description": "Bị bỏ lại trong lần đi dã ngoại ở trường cấp một.Bị bỏ lại khi cắm trại ở trường cấp hai.Bị bỏ lại trong chuyến đi ở trường cấp ba.Cuối cùng tôi đã trở thành sinh viên đại học, rồi sao nữa? Tôi cũng bị bỏ lại sao?Yu IlHan “canh gác” cả Trái Đất một mình trong khi mọi người đi đến những thế giới khác.Truyền thuyết về cậu bắt đầu sau khi cả nhân loại quay lại và đương đầu với Đại Biến Động",
+    "image": "EVERYONE ELSE IS A RETURNEE.jpg",
+    "categoryID": 7,
+    "activate": 0
+  },
+  {
+    "id": 16,
+    "title": "Trái tim người máy",
+    "author": "Cat Bell",
+    "year": 2024,
+    "description": "Một câu chuyện nhỏ về vị giáo sư,về các cô gái, về các chàng trai,và về những người bạn robot.",
+    "image": "Trái tim người máy.jpg",
+    "categoryID": 8,
+    "activate": 0
+  },
+  {
+    "id": 17,
+    "title": "Haroon",
+    "author": "LEE Hyun Bi",
+    "year": 2024,
+    "description": "Trong một tương lai xa, Trái đất bị ảnh hưởng nặng nề bởi các cuộc chiến hạt nhân liên miên và nhân loại thì sống hấp hối dưới một cái lá chắn để bảo vệ nhân số còn lại “Unions”. Bên trong Unions, họ được phân chia từ hạng S tới hạng F dựa trên các khả năng/năng khiếu của họ và sống trong những Khu dân cư phân đúng theo hạng của họ.Thằng main của chúng ta Jung Min là một trong số 300.000 đứa trẻ nhân tạo gieo gen được tạo ra cho tương lai của nhân loại. Tuy nhiên thì cậu ta lại không có năng khiếu (trình cùi) và bị đẩy ra Vùng F, nơi nguy hiểm nhất và nằm ngay rìa ngoài của Union.Rồi bỗng nhiên mọi thứ được thay đổi vào ngày Trưởng thành của cậu ta: Jung Min nhận được một Khoang Thực tế ảo tiên tiến (coi Avatar là biết hà) từ vị cha nuôi cùng với trò chơi tên là “Beyond”.",
+    "image": "Haroon.jpg",
+    "categoryID": 1,
+    "activate": 0
+  },
+  {
+    "id": 18,
+    "title": "Sovereign of Judgment",
+    "author": "TodayAgain",
+    "year": 2024,
+    "description": "Choi Hyuk, một thiên tài chiến đánh nhau. Khi học lớp 6, cậu đã giết người. Sau đó cậu đã hứa với mẹ rằng sẽ không bao giờ đánh nhau nữa. Cậu bị bắt nạt khi ở trường và dành thời gian chỉ để chỉ để ngay người nhìn ra cửa sổ.Một ngày nọ, một vòng tròn xuất hiện ở giữa lớp của cậu.Choi Hyuk, người luôn hối hận về tội lỗi của mình lúc bấy giờ đã học cấp 3. Bây giờ cậu phải đối mặt với định mệnh của mình.Giết hoặc bị giết",
+    "image": "Sovereign of Judgment.jpg",
+    "categoryID": 2,
+    "activate": 0
+  },
+  {
+    "id": 19,
+    "title": "The Throne Of Magical Arcana",
+    "author": "Cuttlefish That Loves Diving",
+    "year": 2024,
+    "description": "“Ngôi sao rơi nhấn chìm thế giới vào hỗn loạn. Ngai vàng của số phận bị bỏ trống. Kẻ không có niềm tin bước vào ánh sáng và bóng tối, tạo ra khởi đầu mới.”Trong một thế giới phép thuật, kiến thức là sức mạnh.*Xiafeng ngủ gật ở thư viện sau vài ngày vắt kiệt sức học hành, khi tỉnh dậy thì đã được chuyển sinh vào một người không thể bình thường hơn ở một thế giới đáng sợ. Vừa mới tới đã sớm phải chứng kiến cảnh một phù thủy bị thiêu sống làm anh chàng sợ đến điếng người.Để tránh trở thành kẻ tiếp theo chết trên giàn thiêu hoặc là chết vì món bánh mỳ cứng như gỗ, Xiafeng phải làm gì đây?",
+    "image": "The Throne Of Magical Arcana.jpg",
+    "categoryID": 3,
+    "activate": 0
+  },
+  {
+    "id": 20,
+    "title": "Những chàng trai YoRHa",
+    "author": "Jun Eishima",
+    "year": 2024,
+    "description": "Phi Đội YoRHa M Thử Nghiệm là một đơn vị gồm các mẫu YoRHa nam, được thành lập nhằm mục đích thu thập toàn bộ dữ liệu về hành vi của các mẫu nói trên. Tuyệt mật.Quyển sách này chứa đựng dữ liệu trong khoảng thời gian họ \"còn sống\". Dữ liệu về tình trạng trong khoảng thời gian sau khi họ \"không còn sống\" được chứa trong các tập tiểu thuyết NieR: Automata",
+    "image": "Những chàng trai YoRHa.jpg",
+    "categoryID": 4,
+    "activate": 0
+  },
+  {
+    "id": 21,
+    "title": "Thiếu nữ du hành khắp Hành Tinh",
+    "author": "Benny Matsuyama",
+    "year": 2024,
+    "description": "Bắt đầu ngay sau sự ra đi của Aerith, nàng gặp gỡ linh hồn những nhân vật đã rời bỏ nhân thế trong Final Fantasy VII, bao gồm Jessie, Biggs và Wedge, Giáo sư Hojo, và cả người bạn trai cũ, Zack Fair. Một vài linh hồn được Aerith an ủi và giúp họ siêu thoát, trong khi số còn lại vẫn còn vương vấn việc đã làm lúc sinh thời nên nàng không thể làm gì được.Cứ sau mỗi cuộc gặp gỡ, Aerith dần hiểu ra triết lý dựa trên mối quan hệ của bản thân với những người họ, và bản chất thật sự của sinh mệnh.",
+    "image": "Thiếu nữ du hành khắp Hành Tinh.jpg",
+    "categoryID": 5,
+    "activate": 0
+  },
+  {
+    "id": 22,
+    "title": "Yokohama-eki SF",
+    "author": "Yuba Isukari",
+    "year": 2024,
+    "description": "MỘT CUỘC SỐNG Ở \"BÊN TRONG\"Tất cả những gì Hiroto từng biết tới chỉ là cuộc sống tẻ nhạt tại một vùng ven biển của Nhật Bản. Phần lớn đất nước đã bị nuốt chửng bởi Ga Yokohama, một chuỗi các tòa nhà và kiến trúc bí ẩn lan rộng ra khắp nơi. Những kẻ sống bên ngoài cửa của nó chưa từng được thấy Bên Trong và chỉ biết tới những gì bên trong ga thông qua những truyền thuyết và lời đồn. Nhưng mọi thứ đã hoàn toàn thay đổi khi Hiroto được nhận một tấm Vé 18, một thứ vật phẩm bí ẩn cho phép cậu đi vào Bên Trong trong vòng năm ngày. Hiroto đã luôn tìm kiếm một mục đích sống, nhưng cái mục đích mà cậu tìm được không hẳn là thứ mà cậu hằng mong muốn...",
+    "image": "Yokohama-eki SF.jpg",
+    "categoryID": 6,
+    "activate": 0
+  },
+  {
+    "id": 23,
+    "title": "Nekoda to shinjikonde iru Neko Kemonohito to Hitasura taeru Ban no Hanashi",
+    "author": "Yuuri",
+    "year": 2024,
+    "description": "Tôi đã được chuyển sinh thành một chú mèo, có một người chủ nhân yêu thương hết mực và cuộc sống nhàn hạ từ ngày này qua ngày khác. Là mèo thật tuyệt!",
+    "image": "Nekoda to shinjikonde iru Neko Kemonohito to Hitasura taeru Ban no Hanashi.jpg",
+    "categoryID": 7,
+    "activate": 0
+  },
+  {
+    "id": 24,
+    "title": "Isaac",
+    "author": "Chue Mong Gak",
+    "year": 2024,
+    "description": "Điên rồ. Phản bội. Khủng bố.Đó là những danh hiệu được gán cho Joon-young, người lính chiến đấu trong một cuộc chiến vô vọng. Chiến đấu đến cùng với phong thái bất chính xứng với cái danh của mình, ký ức của anh được chuyển tới một thế giới khác.Giờ với cái tên Isaac, anh muốn sống hết cuộc đời mình trong những ngày yên bình như thế này. Nhưng vì gia đình anh muốn anh phải chết, anh đã được gửi tới Khuôn Viên, trung tâm giáo dục tốt nhất của đế quốc, với hi vọng rằng anh sẽ bị đuổi học và tước quyền thừa kế của anh.Anh được bảo rằng nhà trường sẽ xem anh như không tồn tại và rằng anh không được bảo vệ bởi luật lệ của trường. Nhưng Isaac, hay Joon-young lại nhìn nhận vấn đề theo cách khác.Không có luật lệ nào để ngăn anh đạt được những gì mình muốn.",
+    "image": "Isaac.jpg",
+    "categoryID": 8,
+    "activate": 0
+  },
+  {
+    "id": 25,
+    "title": "Kami to yoba re, maou to yoba rete mo",
+    "author": "Shimamon",
+    "year": 2024,
+    "description": "Trong một tương lai xa trên Trái Đất, có một cô gái mang trên mình sức mạnh tựa như thần thánh. Cô gái đó là tồn tại cuối cùng của một giống loài đã một thời phát triển phồn vinh thời cổ đại.Họ được gọi là Tiền Nhân [The Ancients].Trên cùng Trái Đất đó , một giống loài người mới đã được sinh ra,mang trong mình khả năng sử dụng ma thuật.Cô gái bắt đầu lặng lẽ quan sát tân nhân loại.Có lúc được gọi là thần thánh, nhưng cũng có lúc được xem là ác quỷ. Cô gái đó vẫn chỉ tiếp tục quan sát tân nhân loại.Đây là câu chuyện kể về một cô gái cô đơn với tân nhân loại đang cần cù phát triển.",
+    "image": "Kami to yoba re, maou to yoba rete mo.jpg",
+    "categoryID": 1,
+    "activate": 0
+  }
+]

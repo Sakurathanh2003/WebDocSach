@@ -21,9 +21,9 @@ class ChapterController extends AdminController
         $title = 'Danh sách chương';
         $isChapter = true;
 
-        if (isset($data['sachID'])) {
+        if (isset($data['bookID'])) {
             $bookID = $data['bookID'];
-            $chapters = Chapter::where('bookID', $bookID)->get();
+            $chapters = Chapter::where('bookID', '=', $bookID)->get();
             return view('admin.chapter.index')->with(compact('chapters', 'books', 'bookID', 'title', 'isChapter'));
         }
         

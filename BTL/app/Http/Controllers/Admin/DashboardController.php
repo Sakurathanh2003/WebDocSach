@@ -56,7 +56,7 @@ class DashboardController extends AdminController
     }
 
     function getBookData() {
-        $books = Book::all();
+        $books = Book::orderBy('id', 'desc')->get();
         return array('books' => $books);
     }
 

@@ -3,8 +3,7 @@
 namespace Database\Seeders;
 use App\Models\Category;
 
-
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use File;
 use Illuminate\Database\Seeder;
 
 class CategorySeeder extends Seeder
@@ -14,40 +13,15 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        //MARK: - Category
-        Category::factory()->create([
-            'name' => 'Tiểu thuyết',
-            'activate' => 0,
-        ]);
+        $json = File::get("database/json/category.json");
+        $categories = json_decode($json, true);
 
-        Category::factory()->create([
-            'name' => 'Truyện ngắn',
-            'activate' => 0,
-        ]);
-
-        Category::factory()->create([
-            'name' => 'Sách phi hư cấu',
-            'activate' => 0,
-        ]);
-
-        Category::factory()->create([
-            'name' => 'Sách học thuật',
-            'activate' => 0,
-        ]);
-
-        Category::factory()->create([
-            'name' => 'Sách thiếu nhi',
-            'activate' => 0,
-        ]);
-
-        Category::factory()->create([
-            'name' => 'Sách tôn giáo',
-            'activate' => 0,
-        ]);
-
-        Category::factory()->create([
-            'name' => 'Sách nghệ thuật',
-            'activate' => 0,
-        ]);
+        foreach ($categories as $category) {
+            Category::query()->updateOrCreate([
+                'id' => $category['id'],
+                'name' => $category['name'],
+                'activate' => $category['activate']
+            ]);
+        }
     }
 }

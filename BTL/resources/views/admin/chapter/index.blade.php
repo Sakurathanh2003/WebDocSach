@@ -36,7 +36,7 @@
                         <thead>
                           <tr>
                             <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left; font-weight: bold;">Mã chương</th>
-                            <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left; font-weight: bold;">Sách</th>
+                            <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left; font-weight: bold;">Thuộc sách</th>
                             <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left; font-weight: bold;">Chương số</th>
                             <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left; font-weight: bold;">Tiêu đề chương</th>
                             <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left; font-weight: bold;">Quản lý</th>
@@ -46,7 +46,7 @@
                             @foreach($chapters as $key => $chapter)
                                 <tr style="background-color: {{ $key % 2 == 0 ? '#f8f9fa' : 'white' }};">
                                     <th scope="row" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $chapter['id'] }}</th>
-                                    <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $chapter['bookID'] }}</td>
+                                    <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $chapter->book->title }}</td>
                                     <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $chapter['order'] }}</td>
                                     <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $chapter['title'] }}</td>
                                     <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">

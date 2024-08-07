@@ -22,21 +22,21 @@
                     <table>
                         <thead>
                           <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Tên</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Vai trò</th>
-                            <th scope="col">Quản lý</th>
+                            <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">ID</th>
+                            <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Tên</th>
+                            <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Email</th>
+                            <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Vai trò</th>
+                            <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Quản lý</th>
                           </tr>
                         </thead>
                         <tbody>
                             @foreach($users as $key => $user)
                                 <tr>
-                                    <th scope="row">{{ $user['id'] }}</th>
-                                    <td>{{ $user['name'] }}</td>
-                                    <td>{{ $user['email'] }}</td>
-                                    <td>{{ $user['role'] == 'admin' ? 'Người quản trị' : 'Người đọc'}}</td>
-                                    <td>
+                                    <th scope="row" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $user['id'] }}</th>
+                                    <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $user['name'] }}</td>
+                                    <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $user['email'] }}</td>
+                                    <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $user['role'] == 'admin' ? 'Người quản trị' : 'Người đọc'}}</td>
+                                    <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">
                                         <div style="display: flex; align-items: center;">
                                             <a href="{{ route('account.edit', ['account' => $user['id']]) }}" class='btn btn-primary' style="margin-right: 10px;">Sửa</a>
                                             <form action="{{ route('account.destroy', ['account' => $user['id']]) }}" method="POST" style="margin: 0;">

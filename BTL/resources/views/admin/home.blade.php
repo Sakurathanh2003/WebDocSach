@@ -51,24 +51,24 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Tên danh mục</th>
-                            <th>Số lượng sách</th>
-                            <th>Kích hoạt</th>
-                            <th>Hành động</th>
+                            <th style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Tên danh mục</th>
+                            <th style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Số lượng sách</th>
+                            <th style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Kích hoạt</th>
+                            <th style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Hành động</th>
                         </tr>
                     <tbody>
                         @foreach($categorydata['categories'] as $key => $category)
                             <tr>
-                                <td>{{ $category['name'] }}</td>
-                                <td>{{ $category->books()->count() }}</td>
-                                <td>
+                                <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $category['name'] }}</td>
+                                <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $category->books()->count() }}</td>
+                                <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">
                                     @if($category['activate'] == 0)
                                         <span class='text text-success'>Kích hoạt</span>
                                     @else
                                         <span class='text text-danger'>Không kích hoạt</span>
                                     @endif
                                 </td>
-                                <td>
+                                <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">
                                     <a href="{{ route('category.edit', ['category' => $category['id']]) }}">Sửa</a>
                                 </td>
                             </tr>
@@ -88,11 +88,11 @@
                 <table>
                     <thead>
                       <tr>
-                        <th scope="col">Tên sách</th>
-                        <th scope="col">Số lượng chương</th>
-                        <th scope="col">Số người xem</th>
-                        <th scope="col">Kích hoạt</th>
-                        <th scope="col">Quản lý</th>
+                        <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Tên sách</th>
+                        <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Số lượng chương</th>
+                        <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Số người xem</th>
+                        <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Kích hoạt</th>
+                        <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Quản lý</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -101,17 +101,17 @@
                         @endphp
                         @foreach($bookdata['books'] as $key => $book)
                             <tr>
-                                <td>{{ $book['title'] }}</td>
-                                <td>{{ $book->chapters()->count() }}</td>
-                                <td>{{ $book->views()->distinct('bookID')->count('bookID') }}</td>
-                                <td>
+                                <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $book['title'] }}</td>
+                                <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $book->chapters()->count() }}</td>
+                                <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $book->views()->distinct('bookID')->count('bookID') }}</td>
+                                <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">
                                     @if($book['activate'] == 0)
                                         <span class='text text-success'>Kích hoạt</span>
                                     @else
                                         <span class='text text-danger'>Không kích hoạt</span>
                                     @endif
                                 </td>
-                                <td>
+                                <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">
                                     <a href="{{ route('book.edit', ['book' => $book['id']]) }}">Sửa</a>
                                 </td>
                             </tr>
@@ -130,11 +130,10 @@
                 <table>
                     <thead>
                       <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Tên</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Vai trò</th>
-                        <th scope="col">Quản lý</th>
+                        <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Tên</th>
+                        <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Email</th>
+                        <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Vai trò</th>
+                        <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Quản lý</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -143,11 +142,10 @@
                         @endphp
                         @foreach($userdata['users'] as $key => $user)
                             <tr>
-                                <th scope="row">{{ $user['id'] }}</th>
-                                <td>{{ $user['name'] }}</td>
-                                <td>{{ $user['email'] }}</td>
-                                <td>{{ $user['role'] == 'admin' ? 'Người quản trị' : 'Người đọc'}}</td>
-                                <td>
+                                <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $user['name'] }}</td>
+                                <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $user['email'] }}</td>
+                                <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $user['role'] == 'admin' ? 'Người quản trị' : 'Người đọc'}}</td>
+                                <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">
                                     <a href="{{ route('account.edit', ['account' => $user['id']]) }}">Sửa</a>
                                 </td>
                             </tr>

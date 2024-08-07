@@ -17,27 +17,27 @@
                     <table>
                         <thead>
                           <tr>
-                            <th scope="col">Mã danh mục</th>
-                            <th scope="col">Tên danh mục</th>
-                            <th scope="col">Số lượng sách</th>
-                            <th scope="col">Kích hoạt</th>
-                            <th scope="col">Quản lý</th>
+                            <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Mã danh mục</th>
+                            <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Tên danh mục</th>
+                            <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Số lượng sách</th>
+                            <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Kích hoạt</th>
+                            <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Quản lý</th>
                           </tr>
                         </thead>
                         <tbody>
                             @foreach($categories as $key => $category)
                                 <tr>
-                                    <th scope="row">{{ $category['id'] }}</th>
-                                    <td>{{ $category['name'] }}</td>
-                                    <td>{{ $category->books()->count() }}</td>
-                                    <td>
+                                    <th scope="row" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $category['id'] }}</th>
+                                    <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $category['name'] }}</td>
+                                    <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $category->books()->count() }}</td>
+                                    <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">
                                         @if($category['activate'] == 0)
                                             <span class='text text-success'>Kích hoạt</span>
                                         @else
                                             <span class='text text-danger'>Không kích hoạt</span>
                                         @endif
                                     </td>
-                                    <td>
+                                    <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">
                                         <div style="display: flex; align-items: center;">
                                              <a href="{{ route('category.edit', ['category' => $category['id']]) }}" class='btn btn-primary' style="margin-right: 10px;">Sửa</a>
                                             <form action="{{ route('category.destroy', ['category' => $category['id']]) }}" method="POST" style="margin: 0;">

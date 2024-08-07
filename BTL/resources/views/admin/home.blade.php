@@ -88,7 +88,6 @@
                 <table>
                     <thead>
                       <tr>
-                        <th scope="col">Mã sách</th>
                         <th scope="col">Tên sách</th>
                         <th scope="col">Số lượng chương</th>
                         <th scope="col">Số người xem</th>
@@ -99,7 +98,6 @@
                     <tbody>
                         @foreach($bookdata['books'] as $key => $book)
                             <tr>
-                                <th scope="row">{{ $book['id'] }}</th>
                                 <td>{{ $book['title'] }}</td>
                                 <td>{{ $book->chapters()->count() }}</td>
                                 <td>{{ $book->views()->distinct('bookID')->count('bookID') }}</td>

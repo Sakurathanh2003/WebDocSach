@@ -53,7 +53,7 @@
 
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Mô tả sách</label>
-                            <textarea id="" class="form-control" name="description" value="{{ $book['description'] }}"></textarea>
+                            <textarea id="" class="form-control" name="description" >{{ $book['description'] }}</textarea>
                         </div>
 
                         <div class="mb-3">

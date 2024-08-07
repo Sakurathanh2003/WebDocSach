@@ -1,7 +1,7 @@
 @extends('layouts.admin.app')
 
 @section('content')
-    <div class="container">
+    <div>
         <div class="card--container">
             <h3 class="main--title">Thống kê</h3>
             <div class="card--wrapper">
@@ -96,6 +96,9 @@
                       </tr>
                     </thead>
                     <tbody>
+                        @php
+                            $bookdata['books'] = $bookdata['books']->take(5);
+                        @endphp
                         @foreach($bookdata['books'] as $key => $book)
                             <tr>
                                 <td>{{ $book['title'] }}</td>
@@ -135,6 +138,9 @@
                       </tr>
                     </thead>
                     <tbody>
+                        @php
+                            $userdata['users'] = $userdata['users']->take(5);
+                        @endphp
                         @foreach($userdata['users'] as $key => $user)
                             <tr>
                                 <th scope="row">{{ $user['id'] }}</th>

@@ -155,12 +155,12 @@ body {
 }
 
 .title {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 200;
 }
 
 .amount--value {
-    font-size: 24px;
+    font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
 }

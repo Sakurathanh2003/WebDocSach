@@ -6,6 +6,7 @@ use App\Http\Controllers\Base\AdminController;
 use App\Models\User;
 use App\Models\Book;
 use App\Models\Category;
+use App\Models\Chapter;
 use Carbon\Carbon;
 
 class DashboardController extends AdminController
@@ -15,9 +16,15 @@ class DashboardController extends AdminController
         $userdata = $this->getUserData();
         $bookdata = $this->getBookData();
         $categorydata = $this->getCategoryData();
+        $chapterdata = $this->getChapterData();
         $title = "Dashboard";
         $isDashboard = true;
-        return view('admin.home')->with(compact('title', 'userdata', 'bookdata', 'categorydata', 'isDashboard'));
+        return view('admin.home')->with(compact('title', 'userdata', 'bookdata', 'categorydata', 'isDashboard', 'chapterdata'));
+    }
+
+    function getChapterData() {
+        $chapters = Chapter::all();
+        return $chapters;
     }
 
     function getUserData() {
@@ -27,6 +34,9 @@ class DashboardController extends AdminController
         // Xác định thời gian của tuần trước
         $startOfLastWeek = $startOfWeek->copy()->subWeek();
         $endOfLastWeek = $endOfWeek->copy()->subWeek();
+
+        // Tổng số lượng người dùng
+        $users = User::all();
 
         // Đếm số lượng người đăng ký trong tuần này
         $weeklyRegistrations = User::whereBetween('created_at', [$startOfWeek, $endOfWeek])->count();
@@ -42,7 +52,7 @@ class DashboardController extends AdminController
             ? (($weeklyRegistrations - $registrationsLastWeek) / $registrationsLastWeek) * 100 
             : ($weeklyRegistrations > 0 ? 100 : 0);
 
-        return array('number' => $weeklyRegistrations, 'change' => $percentageChange);
+        return array('number' => $weeklyRegistrations, 'change' => $percentageChange, 'users' => $users);
     }
 
     function getBookData() {
@@ -51,7 +61,7 @@ class DashboardController extends AdminController
     }
 
     function getCategoryData() {
-        $categories = Category::all();
+        $categories = Category::orderBy('id', 'desc')->take(5)->get();
         return array('categories' => $categories);
     }
 }

@@ -1,7 +1,7 @@
 @extends('layouts.admin.app')
 
 @section('content')
-<div class="container tabular--wrapper">
+<div class="tabular--wrapper">
     <a href="{{ route('book.create') }}" class='btn btn-primary' style="margin-bottom: 10px;">Thêm sách</a>
 
     <div class="row justify-content-center">
@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    <table class="table table-striped">
+                    <table>
                         <thead>
                           <tr>
                             <th scope="col">Mã sách</th>
@@ -42,13 +42,14 @@
                                         @endif
                                     </td>
                                     <td>
-                                        <a href="{{ route('book.edit', ['book' => $book['id']]) }}" class='btn btn-primary'>Sửa</a>
-                                        <form action="{{ route('book.destroy', ['book' => $book['id']]) }}" method="POST">
-                                            @method('DELETE')
-                                            @CSRF
-                                            <button class='btn btn-danger' onclick="return confirm('Bạn có chắc chắn muốn xoá sách này không?');">Xoá</button>
-                            
-                                        </form>
+                                        <div style="display: flex; align-items: center;">
+                                            <a href="{{ route('book.edit', ['book' => $book['id']]) }}" class='btn btn-primary' style="margin-right: 10px;">Sửa</a>
+                                            <form action="{{ route('book.destroy', ['book' => $book['id']]) }}" method="POST" style="margin: 0;">
+                                                @method('DELETE')
+                                                @CSRF
+                                                <button class='btn btn-danger' onclick="return confirm('Bạn có chắc chắn muốn xoá sách này không?');">Xoá</button>
+                                            </form>
+                                        </div>
                                     </td>
                                 </tr>
                             @endforeach

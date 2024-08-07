@@ -1,7 +1,7 @@
 @extends('layouts.admin.app')
 
 @section('content')
-<div class="container tabular--wrapper">
+<div class="tabular--wrapper">
     <a href="{{ route('account.create') }}" class='btn btn-primary' style="margin-bottom: 10px;">Tạo tài khoản</a>
     <div class="row justify-content-center">
         <div>
@@ -19,7 +19,7 @@
                         </div>
                     @endif
 
-                    <table class="table table-striped">
+                    <table>
                         <thead>
                           <tr>
                             <th scope="col">ID</th>
@@ -37,13 +37,15 @@
                                     <td>{{ $user['email'] }}</td>
                                     <td>{{ $user['role'] == 'admin' ? 'Người quản trị' : 'Người đọc'}}</td>
                                     <td>
-                                        <a href="{{ route('account.edit', ['account' => $user['id']]) }}" class='btn btn-primary'>Sửa</a>
-                                        <form action="{{ route('account.destroy', ['account' => $user['id']]) }}" method="POST">
-                                            @method('DELETE')
-                                            @CSRF
-                                            <button class='btn btn-danger' onclick="return confirm('Bạn có chắc chắn muốn xoá tài khoản này không?');">Xoá</button>
-                            
-                                        </form>
+                                        <div style="display: flex; align-items: center;">
+                                            <a href="{{ route('account.edit', ['account' => $user['id']]) }}" class='btn btn-primary' style="margin-right: 10px;">Sửa</a>
+                                            <form action="{{ route('account.destroy', ['account' => $user['id']]) }}" method="POST" style="margin: 0;">
+                                                @method('DELETE')
+                                                @CSRF
+                                                <button class='btn btn-danger' onclick="return confirm('Bạn có chắc chắn muốn xoá tài khoản này không?');">Xoá</button>
+                                
+                                            </form>
+                                        </div>
                                     </td>
                                 </tr>
                             @endforeach

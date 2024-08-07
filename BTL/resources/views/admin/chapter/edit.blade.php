@@ -40,7 +40,7 @@
 
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Nội dung</label>
-                            <textarea id="" class="form-control" name="content" value="{{ $chapter['content'] }}"></textarea>
+                            <textarea id="" class="form-control" name="content" value="">{{ $chapter->content }}</textarea>
                         </div>
 
                         <div class="mb-3">

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Tiểu thuyết",
+    "activate": 0
+  },
+  {
+    "id": 2,
+    "name": "Ngôn tình",
+    "activate": 0
+  },
+  {
+    "id": 3,
+    "name": "Truyện ngắn",
+    "activate": 0
+  },
+  {
+    "id": 4,
+    "name": "Sách phi hư cấu",
+    "activate": 0
+  },
+  {
+    "id": 5,
+    "name": "Sách học thuật",
+    "activate": 0
+  },
+  {
+    "id": 6,
+    "name": "Sách thiếu nhi",
+    "activate": 0
+  },
+  {
+    "id": 7,
+    "name": "Sách tôn giáo",
+    "activate": 0
+  },
+  {
+    "id": 8,
+    "name": "Sách nghệ thuật",
+    "activate": 0
+  }
+]

@@ -1,75 +1,7 @@
-
 @extends('layouts.user.app')
 
 @section('content')
-<body>
-    <div id="page-top"></div>
-    <div data-scrollto="#page-top" class="backtoTop"><i class="fas fa-angle-double-up"></i></div>
-    <div id="navbar" class="headroom">
-        <div class="container">
-            <div id="sidenav-icon" class="none-xl">
-                <div class="sidenav-icon-content">
-                    <span class="sidenav-icon_white"></span>
-                    <span class="sidenav-icon_white"></span>
-                    <span class="sidenav-icon_white"></span>
-                </div>
-                <ul class="navbar-menu none hidden-block at-mobile unstyle">
-                    <div class="navbar-search block none-m in-navbar-menu">
-                        <form class="" action="/tim-kiem" method="get">
-                            <input class="search-input" type="text" placeholder="Tối thiểu 2 kí tự" name="keywords"
-                                value="">
-                            <button class="search-submit" type="submit" value="Tìm kiếm"><i
-                                    class="fas fa-search"></i></button>
-                        </form>
-                    </div>
-
-
-                    <li><a class="nav-menu_item" href="/xuat-ban"><span class="">Xuất bản</span></a></li>
-                    <li><a class="nav-menu_item" href="/danh-sach"><span class="">Danh sách</span></a></li>
-                </ul>
-            </div>
-
-            <div class="navbar-logo-wrapper">
-                <a href="/" class="navbar-logo" style="background-image: url('/img/logo-9.png')"
-                    title="Trang chủ"></a>
-            </div>
-
-            <div id="navbar-user" class="guest">
-                <a class="login-link" href="/login">Đăng nhập</a>
-                <div id="guest-menu">
-                    <div class="icon">
-                        <span class="white-point"></span>
-                        <span class="white-point"></span>
-                        <span class="white-point"></span>
-                    </div>
-                    <ul class="nav-submenu hidden-block unstyled none">
-                        <li>
-                            <div class="nightmode-toggle li-inner">
-                                <span><i class="fas fa-moon"></i>Nền tối</span>
-                                <div class="toggle-icon">
-                                    <i class="fa fa-toggle-off"></i>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="li-inner" href="/lich-su-doc"><i class="fas fa-history"></i><span>Lịch
-                                    sử</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="navbar-mainblock">
-                <div class="navbar-search none block-m">
-                    <form class="" action="/tim-kiem" method="get">
-                        <input class="search-input" type="text" placeholder="Tối thiểu 2 kí tự" name="keywords"
-                            value="">
-                        <button class="search-submit" type="submit" value="Tìm kiếm"><i
-                                class="fas fa-search"></i></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+<div>
     <div class="page-top-group  at-index ">
         <a href="/truyen/13957">
             <div class="index-background d-none d-lg-block"
@@ -87,18 +19,12 @@
                     <div class="daily-recent_views">
                         <header class="title">
                             <span class="top-tab_title title-active"><i class="fas fa-trophy"></i> Nổi bật</span>
-                            <span class="top-tab_title"><a
-                                    href="https://docln.net/danh-sach?truyendich=1&amp;sapxep=topthang">Top
-                                    tháng</a></span>
-                            <span class="top-tab_title"><a
-                                    href="https://docln.net/danh-sach?truyendich=1&amp;sapxep=top">Toàn
-                                    t/gian</a></span>
                         </header>
                         <main class="row d-block">
                             @foreach ($newbooks['books'] as $book)
                                 <div class="popular-thumb-item mr-1">
                                     <div class="thumb-wrapper">
-                                        <a href="/truyen/18531-tro-thanh-hau-thuan-cua-ke-phan-dien"
+                                        <a href="/book/{{ $book->id }}"
                                             title="{{ $book->title }}">
                                             <div class="a6-ratio">
                                                 <div class="content img-in-ratio">
@@ -109,7 +35,7 @@
                                         <div class="thumb-detail">
                                             <div class="thumb_attr series-title" title="{{ $book->title }}">
                                                 <a
-                                                    href="/truyen/18531-tro-thanh-hau-thuan-cua-ke-phan-dien"
+                                                    href="/book/{{ $book->id }}"
                                                     title="{{ $book->title }}">{{ $book->title }}</a></div>
                                         </div>
                                     </div>
@@ -135,7 +61,7 @@
                             @foreach ($newchapters as $chapter)
                                 <div class="thumb-item-flow col-4 col-md-3 col-lg-2">
                                     <div class="thumb-wrapper ln-tooltip">
-                                        <a href="/truyen/18639-that-time-ive-seen-through-a-beautiful-gyarus-punishment-game-confession-i-forgave-her-but-she-started-to-get-closer/c139120-chuong-40"
+                                        <a href="/book/{{ $chapter->bookID }}/{{ $chapter->id }}"
                                             title="Chương 40">
                                             <div class="a6-ratio">
                                                 <div class="content img-in-ratio lazyload">
@@ -145,12 +71,12 @@
                                         </a>
                                         <div class="thumb-detail">
                                             <div class="thumb_attr chapter-title" title="Chương 40"><a
-                                                    href="/truyen/18639-that-time-ive-seen-through-a-beautiful-gyarus-punishment-game-confession-i-forgave-her-but-she-started-to-get-closer/c139120-chuong-40"
+                                                    href="/book/{{ $chapter->bookID }}/{{ $chapter->id }}"
                                                     title="{{ 'Chương '.$chapter->order }}">{{ 'Chương '.$chapter->order }}</a></div>
                                         </div>
                                     </div>
                                     <div class="thumb_attr series-title"><a
-                                            href="/truyen/18639-that-time-ive-seen-through-a-beautiful-gyarus-punishment-game-confession-i-forgave-her-but-she-started-to-get-closer">{{ $chapter->book->title }}</a></div>
+                                            href="/book/{{ $chapter->book->id }}">{{ $chapter->book->title }}</a></div>
                                 </div>
                             @endforeach
                         </main>
@@ -178,7 +104,7 @@
                                             <div class="row">
                                                 <div class="col-4 col-md-3 col-lg-4">
                                                     <div class="series-cover">
-                                                        <a href="/truyen/18751-aaaaaaaaaaaa">
+                                                        <a href="/book/{{ $book->id }}">
                                                             <div class="a6-ratio">
                                                                 <div class="content img-in-ratio lazyload"
                                                                     data-bg="https://docln.net/img/nocover.jpg">
@@ -191,7 +117,7 @@
                                                 <div class="col-8 col-md-9 col-lg-8">
                                                     <div class="list-detail">
                                                         <h4 class="series-title text-xl font-bold"><a
-                                                                href="/truyen/18751-aaaaaaaaaaaa">{{ $book['title'] }}</a></h4>
+                                                                href="/book/{{ $book->id }}">{{ $book['title'] }}</a></h4>
                                                         <div class="series-summary">{{ $book['description'] }}</div>
                                                         <div class="lastest-chapter">
                                                         </div>
@@ -227,10 +153,8 @@
 
 
     <footer id="footer">
-        <div class="container">
-            <!--<span><a href="">Hako.re</a></span>-->
-            
+        <div class="container">            
         </div>
     </footer>
-</body>
+</div>
 @endsection

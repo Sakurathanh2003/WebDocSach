@@ -61,7 +61,7 @@ class DashboardController extends AdminController
     }
 
     function getCategoryData() {
-        $categories = Category::orderBy('id', 'desc')->take(5)->get();
+        $categories = Category::orderBy('id', 'desc');
         return array('categories' => $categories);
     }
 }

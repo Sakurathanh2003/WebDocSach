@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 use App\Http\Controllers\Base\Controller;
 use App\Models\Book;
+use App\Models\Category;
 use App\Models\Chapter;
 
 
@@ -18,8 +19,9 @@ class HomeController extends Controller
     public function index()
     {
         $newbooks = $this->getBookData();
+        $categories = Category::all();
         $newchapters = $this->getChapterData();
-        return view('user.home')->with(compact('newbooks', 'newchapters'));
+        return view('user.home')->with(compact('newbooks', 'newchapters', 'categories'));
     }
 
     function getBookData() {

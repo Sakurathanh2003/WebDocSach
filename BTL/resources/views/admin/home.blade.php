@@ -90,7 +90,7 @@
                       <tr>
                         <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Tên sách</th>
                         <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Số lượng chương</th>
-                        <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Số người xem</th>
+                        <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Số lượt xem</th>
                         <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Kích hoạt</th>
                         <th scope="col" style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">Quản lý</th>
                       </tr>
@@ -103,7 +103,7 @@
                             <tr>
                                 <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $book['title'] }}</td>
                                 <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $book->chapters()->count() }}</td>
-                                <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $book->views()->distinct('bookID')->count('bookID') }}</td>
+                                <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">{{ $book->views()->count() }}</td>
                                 <td style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">
                                     @if($book['activate'] == 0)
                                         <span class='text text-success'>Kích hoạt</span>

@@ -6,6 +6,8 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\BookController;
 use App\Http\Controllers\User\ChuongController;
+use App\Http\Controllers\User\DanhMucController;
+use App\Http\Controllers\User\DanhSachController;
 use App\Http\Controllers\User\HomeController;
 use App\Http\Controllers\User\SachController;
 use Illuminate\Support\Facades\Route;
@@ -17,6 +19,12 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::resource('/book', SachController::class);
 Route::get('book/{bookID}/{id}', [ChuongController::class, 'show']);
+Route::get('listbook/', [DanhSachController::class, 'index']);
+Route::get('listbook/{character}', [DanhSachController::class, 'listBookWithCharacter']);
+Route::get('category/{id}', [DanhMucController::class, 'show']);
+Route::get('category/{id}/{character}', [DanhMucController::class, 'filter']);
+
+
 
 // MARK: - Admin
 Route::group([

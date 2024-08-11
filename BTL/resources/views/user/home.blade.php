@@ -11,42 +11,7 @@
             </div>
         </a>
     </div>
-
     <main id="mainpart" class="at-index">
-        <div class="container" style="margin-bottom: 40px;">
-            <div class="row">
-                <div class="col-12 col-lg-9">
-                    <div class="daily-recent_views">
-                        <header class="title">
-                            <span class="top-tab_title title-active"><i class="fas fa-trophy"></i> Nổi bật</span>
-                        </header>
-                        <main class="row d-block">
-                            @foreach ($newbooks['books'] as $book)
-                                <div class="popular-thumb-item mr-1">
-                                    <div class="thumb-wrapper">
-                                        <a href="/book/{{ $book->id }}"
-                                            title="{{ $book->title }}">
-                                            <div class="a6-ratio">
-                                                <div class="content img-in-ratio">
-                                                    <img src="{{ asset('public/uploads/sach/'.$book['image']) }}" alt="" width="100%" height="100%">
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <div class="thumb-detail">
-                                            <div class="thumb_attr series-title" title="{{ $book->title }}">
-                                                <a
-                                                    href="/book/{{ $book->id }}"
-                                                    title="{{ $book->title }}">{{ $book->title }}</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </main>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div style="text-align: center; margin: 0 auto 10px auto;">
         </div>
 
@@ -95,7 +60,7 @@
                     <div class="col-12 col-md-8 col-lg-9">
                         <section class="index-section new-series">
                             <header class="section-title"><span class="sts-bold">Sách</span><span
-                                    class="sts-empty">Vừa Đăng</span>
+                                    class="sts-empty"></span>
                             </header>
                             <main class="sect-body">
                                 <div class="row">
@@ -125,14 +90,12 @@
                                                 </div>
                                             </div>
                                         </article>
-                                    @endforeach
-                                   
-                                    
+                                    @endforeach    
                                 </div>
                             </main>
                             <div class="see-more_cover">
                                 <a class="see-more"
-                                    href="https://docln.net/danh-sach?truyendich=1&amp;sapxep=truyenmoi">
+                                    href="/listbook">
                                     <i class="fas fa-hand-point-right"></i>Xem thêm
                                 </a>
                             </div>
@@ -143,15 +106,7 @@
         </div>
     </main>
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df" data-csrf="rxBlpmrls80EjEbxdSjWdsA28X8lMloQjaSaJwpU"
-        data-update-uri="/livewire/update" data-navigate-once="true"></script>
-
-
-    <script async type='text/javascript' src='//pl16314303.highcpmgate.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js'>
-    </script>
-
-
+    <script src="/scripts/app.js"></script>
     <footer id="footer">
         <div class="container">            
         </div>

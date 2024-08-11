@@ -2,19 +2,29 @@
 
 namespace App\Http\Controllers\User;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Base\Controller;
-use App\Models\Chapter;
-use App\Models\BookView;
-use Illuminate\Support\Facades\Auth;
-class ChuongController extends Controller
+use Illuminate\Http\Request;
+use App\Models\Book;
+use App\Models\Category;
+
+class DanhSachController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $books = Book::orderBy('id', 'desc')->get();
+        $categories = Category::all();
+        $path = "listbook";
+        return view('user.listbook')->with(compact('books', 'categories', 'path'));
+    }
+
+    public function listBookWithCharacter(string $character, Request $request) {
+        $books = Book::where('title', 'LIKE', $character . '%');
+        $categories = Category::all();
+        $path = "listbook";
+        return view('user.listbook')->with(compact('books', 'character', 'categories', 'path'));
     }
 
     /**
@@ -36,19 +46,9 @@ class ChuongController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $bookID, string $id)
+    public function show(string $id)
     {
-        $userID = Auth::check() ? Auth::user()->id : "1";
-        $chapter = Chapter::find($id);
-
-        BookView::create([
-            'userID' => $userID,
-            'bookID' => $bookID,
-            'chapterID' => $id,
-            'viewed_at' => now(),
-        ]);
-
-        return view('user.chapter')->with((compact('chapter')));
+        return view('user.listbook');
     }
 
     /**

@@ -16,8 +16,6 @@
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
-    <link rel="canonical"
-        href="https://docln.net/book/{{ $chapter->bookID }}/c139028-chuong-41-nay-nhanh-cai-chan-len">
     <meta property="og:image"
         content="https://i2.docln.net/ln/series/covers/s18741-893a5936-eb18-4b6f-ab33-81fdb9e36b8f.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +25,6 @@
         rel="stylesheet">
     <link rel="preload" href="/fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
     <link rel="preload" href="/fonts/OpenSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-    <link rel="preconnect" href="https://www.google-analytics.com">
 
     <link rel="shortcut icon" href="/img/favicon.png?v=3">
     <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
@@ -40,9 +37,7 @@
         integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 
 
-    <script src="/scripts/plugins.js?id=b612d946b32459430eed3066ed15adf2"></script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
+    <script src="/scripts/plugins.js"></script>
 </head>
 
 <body>

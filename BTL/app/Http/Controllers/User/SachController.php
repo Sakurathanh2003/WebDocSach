@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\User;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\Book;
 use App\Http\Controllers\Base\Controller;
@@ -38,7 +39,8 @@ class SachController extends Controller
     public function show(string $id)
     {
         $book = Book::find($id);
-        return view('user.book')->with((compact('book')));
+        $categories = Category::all();
+        return view('user.book')->with((compact('book', 'categories')));
     }
 
     /**

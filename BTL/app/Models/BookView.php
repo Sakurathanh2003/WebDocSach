@@ -9,9 +9,9 @@ class BookView extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['userID', 'bookID', 'viewed_at'];
+    protected $fillable = ['userID', 'bookID', 'chapterID', 'viewed_at'];
 
-    public $timestamps = true;
+    public $timestamps = false;
 
     protected $primaryKey = 'id';
     protected $table = 'BookView';

@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id()->autoIncrement();
             $table->foreignId('userID')->nullable()->constrained('users')->onDelete('cascade');
             $table->foreignId('bookID')->references('id')->on('Book')->onDelete('cascade');
+            $table->foreignId('chapterID')->references('id')->on('Chapter')->onDelete('cascade');
             $table->timestamp('viewed_at')->useCurrent();
-            $table->unique(['userID', 'bookID']); // Đảm bảo mỗi người dùng chỉ có thể xem mỗi cuốn sách một lần
         });
     }
 

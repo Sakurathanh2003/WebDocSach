@@ -20,4 +20,23 @@ class Chapter extends Model
     {
         return $this->belongsTo(Book::class, 'bookID', 'id');
     }
+
+    public function nextChapter() {
+        $nextChapter = Chapter::where('bookID', $this->bookID)
+                           ->where('order', '>', $this->order)
+                           ->orderBy('order', 'asc')
+                           ->first();
+
+        return $nextChapter ?: null; 
+    }
+
+    public function previousChapter()
+    {
+        $previousChapter = Chapter::where('bookID', $this->bookID)
+                               ->where('order', '<', $this->order)
+                               ->orderBy('order', 'desc')
+                               ->first();
+
+        return $previousChapter ?: null;
+    }
 }

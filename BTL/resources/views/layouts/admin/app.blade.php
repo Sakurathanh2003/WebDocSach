@@ -19,7 +19,6 @@
     <link href="/css/adminApp.css" rel="stylesheet">
     @vite(['resources/sass/app.scss'])
 </head>
-
 <body>
     <div class="sidebar">
         <div class="logo"></div>

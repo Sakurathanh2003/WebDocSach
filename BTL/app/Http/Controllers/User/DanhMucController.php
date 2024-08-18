@@ -12,9 +12,9 @@ class DanhMucController
      */
     public function filter($id, $character) {
         $currentCategory = Category::find($id);
-        $categories = Category::all();
+        $categories = Category::where('activate', 0)->get();
 
-        $books = $currentCategory->books()->where('title', 'LIKE', $character . '%')->get();
+        $books = $currentCategory->books()->where('title', 'LIKE', $character . '%')->where('activate', 0)->get();
         $path = "category/".$id;
         return view('user.listbook')->with(compact('books', 'currentCategory', 'categories', 'path', 'character'));
     }

@@ -39,7 +39,7 @@ class SachController extends Controller
     public function show(string $id)
     {
         $book = Book::find($id);
-        $categories = Category::all();
+        $categories = Category::where('activate', 0)->get();
         return view('user.book')->with((compact('book', 'categories')));
     }
 

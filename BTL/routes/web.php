@@ -18,13 +18,11 @@ Auth::routes();
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::resource('/book', SachController::class);
-Route::get('book/{bookID}/{id}', [ChuongController::class, 'show']);
+Route::get('book/{bookID}/{id}', [ChuongController::class, 'show'])->middleware(['auth']);
 Route::get('listbook/', [DanhSachController::class, 'index']);
 Route::get('listbook/{character}', [DanhSachController::class, 'listBookWithCharacter']);
 Route::get('category/{id}', [DanhMucController::class, 'show']);
 Route::get('category/{id}/{character}', [DanhMucController::class, 'filter']);
-
-
 
 // MARK: - Admin
 Route::group([

@@ -19,13 +19,13 @@ class HomeController extends Controller
     public function index()
     {
         $newbooks = $this->getBookData();
-        $categories = Category::all();
+        $categories = Category::where('activate', 0)->get();
         $newchapters = $this->getChapterData();
         return view('user.home')->with(compact('newbooks', 'newchapters', 'categories'));
     }
 
     function getBookData() {
-        $books = Book::orderBy('id', 'desc')->take(6)->get();
+        $books = Book::where('activate', 0)->orderBy('id','desc')->take(6)->get();
         return array('books' => $books);
     }
 
@@ -34,6 +34,9 @@ class HomeController extends Controller
         $latestChapters = [];
 
         foreach ($chapters as $chapter) {
+            if ($chapter->book->activate == 1) {
+                continue;
+            }
             // Kiểm tra xem sách của chương này đã được thêm vào mảng chưa
             if (!isset($latestChapters[$chapter['bookID']])) {
                 // Nếu chưa, thêm chương này vào mảng

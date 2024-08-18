@@ -158,6 +158,11 @@ class BookController extends AdminController
     public function destroy(string $id)
     {
         $sach = Book::find($id);
+        
+        if ($sach->chapters()->count() > 0) {
+            return redirect()->back()->with('error', 'Không thể xoá sách do vẫn có chương thuộc sách này!');  
+        }
+
         $imageFile = "public/uploads/sach/".$sach['image'];
 
         if (file_exists($imageFile)) {

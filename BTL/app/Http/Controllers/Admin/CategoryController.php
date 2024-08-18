@@ -100,7 +100,13 @@ class CategoryController extends AdminController
      */
     public function destroy(string $id)
     {
-        Category::find($id)->delete();
+        $category = Category::find($id);
+
+        if ($category->books()->count() > 0) {
+            return redirect()->back()->with('error', 'Không thể xoá danh mục này do vẫn có sách thuộc danh mục!');  
+        }
+
+        $category->delete();
         return redirect()->back()->with('status', 'Xoá danh mục thành công!');  
     }
 }
